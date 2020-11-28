@@ -1,0 +1,118 @@
+@font-face{
+    font-family: Corporation Games;
+    src: url("../font/Corporation_Games.otf");
+}
+
+@font-face{
+    font-family: Bomber Escort;
+    src: url("../font/BomberEscortItalic-ALG22.otf")
+}
+
+@font-face{
+    font-family: Gotham;
+    src: url("../font/GothamMedium.ttf")
+}
+
+html {
+    background-image: linear-gradient(black,#04102D, #04102D ,#18002b);
+    background-repeat:no-repeat;
+    min-height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.logo img{
+    width: 60px;
+    cursor: pointer;
+
+}
+
+.judul {
+    margin-top: 20px;
+    margin-right: 3%
+}
+
+.judul h1{
+    font-size: 20px;
+    font-family: Bomber Escort;
+    display: inline;
+    margin-top: auto;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 500px;
+    display: block;
+}
+
+.COMINGSOON {
+    font-family: Corporation Games;
+    color: #FFFFFF;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    text-align: center;
+}
+
+.COMINGSOON h1{
+    font-size: 100px;
+    margin: 10px 0 30px;
+    text-shadow: -3px 0  #00B2CA, 0 3px  #00B2CA, 3px 0  #00B2CA, 0 -3px  #00B2CA;
+    cursor: pointer;
+    transform: skew(10deg,10deg);
+    animation: flicker 5s infinite;
+}
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99;
+		text-shadow: 0 0 10px  #00B2CA, 0 0 20px #00B2CA, 0 0 30px  #00B2CA, 0 0 40px   #00B2CA, 0 0 50px #16C172;
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.COMINGSOON h2{
+    font-family: Gotham;
+    font-size: medium;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: auto;
+    padding-top: 15%;
+}
+
+
+.footer{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed img {
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
